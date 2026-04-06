@@ -10,9 +10,10 @@
 import cors from "cors";
 app.use(cors());
 
+import { getRandomQuote } from "./quotes.js";
+
 // TODO 5: Import and apply Morgan middleware
 import morgan from "morgan";
-import { getRandomQuote } from "./quotes";
 app.use(morgan("dev"));
 
 // TODO 6.1: Create root route "/"
